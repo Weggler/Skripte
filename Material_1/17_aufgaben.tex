@@ -1,0 +1,54 @@
+
+\ifdefined\MOODLE 
+\section*{Vektorräume Aufgaben}\label{MA1-17-Aufgaben}
+
+	Regeln und Beispiele, die zur Bearbeitung der Aufgaben hilfreich sind, finden Sie in \ref{MA1-17} und, falls Sie nicht weiterkommen, schauen Sie \hyperref[MA1-17-Aufgaben-Loesungen]{hier}.
+\else
+\section{Vektorräume Aufgaben}\label{MA1-17-Aufgaben}
+
+	Regeln und Beispiele, die zur Bearbeitung der Aufgaben hilfreich sind, finden Sie im Skript und, falls Sie nicht weiterkommen, schauen Sie \hyperref[MA1-17-Aufgaben-Loesungen]{hier}.
+\fi 
+
+\begin{exercisebox}[Körperaxiome]
+  Ist die folgende Aussage wahr oder falsch? 
+  \begin{center} "\,Das Skalarprodukt ist eine Multiplikation von Vektoren."\end{center}
+\end{exercisebox}
+
+\begin{exercisebox}[Vektorraum]
+	Prüfen Sie, ob die folgenden Mengen Vektorräume über \(\mathbb R\) sind oder nicht und geben Sie ggf die Dimension und eine Basis an. 
+	\begin{itemize}
+		\item[(a)] \( M = \{ \left(  a,\; 0, \;b\right)^\intercal,\; a, b\in\mathbb R\} \)
+		\item[(b)] \( M = \{ \left( x, \; y,\right)^\intercal:\; 2x-3y = 0,\; x,y\in\mathbb R\} \)
+		\item[(c)] \( M = \{ \left( a, \; a^2\right)^\intercal,\; a\in\mathbb R\} \)
+	\end{itemize}
+\end{exercisebox}
+
+\begin{exercisebox}[Vektorraum]
+	Es seien $\boldsymbol p$ und $\boldsymbol n$ Vektoren des $\mathbb R^3$ und \(\boldsymbol n\not=\boldsymbol 0\). 
+	\begin{itemize}
+		\item[(a)] Welches geometrische Objekt stellt die Lösungsmenge \(E\) der folgenden Gleichung(en) dar? 
+	\[ \boldsymbol x \in \mathbb R^3: \; \langle \left( \boldsymbol x - \boldsymbol p \right), \boldsymbol n\rangle = 0\]
+\item[(b)] Ist \(E\) ein reeller Vektorraum? Falls ja, geben Sie die Dimension und eine Basis an.
+	\end{itemize}
+\end{exercisebox}
+
+\begin{exercisebox}[Basis]
+	Gegeben sei der Vektor \( \boldsymbol a^\intercal = \left( \sqrt{3}, 1\right)^\intercal\). Bestimmen Sie zwei Vektoren \(\boldsymbol  v\) und \(\boldsymbol w\), die eine Orthonormalbasis des \(\mathbb R^2\) sind, wobei \(\boldsymbol v\) parallel zu \(\boldsymbol a\) sein soll, also \(\boldsymbol v \parallel \boldsymbol a\).
+\end{exercisebox}
+
+\begin{exercisebox}[Dimension]
+	Welche Dimension haben die folgenden reellen Vektorräume?
+	\begin{itemize}
+		\item[(a)] $ \mathbb V_1 = \left\{ \boldsymbol x \in \mathbb R^n: \boldsymbol x = \alpha \boldsymbol a\,, \; \boldsymbol a \in \mathbb R^n\setminus\{\boldsymbol 0\} \right\} $
+		\item[(b)] $ \mathbb V_2 = \left\{ \boldsymbol x \in \mathbb R^n: \boldsymbol x = \alpha \boldsymbol a + \beta \boldsymbol b\,, \; \boldsymbol b,\boldsymbol a \in \mathbb R^n\setminus\{ \boldsymbol 0 \}, \; \boldsymbol a \times \boldsymbol b =\boldsymbol 0 \right\}$
+	\end{itemize}
+\end{exercisebox}
+
+\begin{exercisebox}[Anwendung: Krummlinige Koordinaten]
+	\begin{itemize}
+		\item[(a)] Bestimmen Sie die Polarkoordinaten eines beliebigen Vektors \(\boldsymbol x \in \mathbb R^2\setminus \{\boldsymbol 0\}\).
+		\item[(b)] Zeigen Sie, dass  die Vektoren \[ \boldsymbol e_{\varphi} = \left( \begin{array}{c} -\sin(\varphi) \\\cos(\varphi) \end{array}\right), \; \boldsymbol e_{r} = \left( \begin{array}{c} \cos(\varphi) \\\sin(\varphi) \end{array}\right)\; \textnormal{mit}\; r\in [0,\infty), \; \varphi\in (-\frac{\pi}{2}, \frac{\pi}{2}] \] eine Orthonormalbasis des \(\mathbb R^2\) sind.
+			\item[(c)] Skizzieren Sie für \(r=1\) und \(\varphi = \pi/4\) die Orthonormalbasen \( \{\boldsymbol e_x, \boldsymbol e_y\}  \) und \( \{\boldsymbol e_r, \boldsymbol e_\varphi\}  \) in einem gemeinsamen Koordinatensystem.  
+	\end{itemize}
+\end{exercisebox}
+

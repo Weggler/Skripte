@@ -1,0 +1,83 @@
+\section*{Geradengleichung Lösungen }\label{MA1-18-Aufgaben-Loesungen}
+
+\ifdefined\MOODLE 
+	Regeln und Beispiele, die zum Verständnis der Lösungswege hilfreich sind, finden Sie in \ref{MA1-18}.
+\else
+	Regeln und Beispiele, die zum Verständnis der Lösungswege hilfreich sind, finden Sie im Skript.
+\fi 
+
+\begin{exercisebox}[Analytische Geometrie]
+	Es sei $\boldsymbol r, \boldsymbol n\in\mathbb R^3$. Welches geometrische Objekt stellt die Lösungsmenge der folgenden Gleichung(en) dar? 
+	\[ \boldsymbol x \in \mathbb R^3: \; \left( \boldsymbol x - \boldsymbol r \right) \boldsymbol \cdot \boldsymbol n = 0\]
+
+	\vspace{0.3cm}
+	\noindent{\bf Lösung:}\newline
+	Ebene mit Aufhängepunkt $\boldsymbol r$ und Normale $\boldsymbol n$.
+\end{exercisebox}
+
+\begin{exercisebox}[Lineare Funktion]
+	Wie läßt sich eine Funktion $f:\mathbb R^n \to \mathbb R$ beschreiben, die in jedem Argument linear ist? Es gelte also \[ f( x_1, x_2, \dots, \alpha x_i, \dots, x_n) = \alpha f(x_1,x_2,\dots, x_i, \dots, x_n)\quad i=1,\dots,n\,.\]
+
+	\vspace{0.3cm}
+	\noindent{\bf Lösung:}\newline
+	Um eine Abbildungsvorschrift für $f$ zu bekommen, ist es geschickt sich zu überlegen, wie $f$ mit nur einem Argument umgeht. Was macht die Anwendung von $f$ aus dem Vektor $\boldsymbol x_i: = (0,0,\dots,0,x_i,0,\dots,0)^\intercal$? Laut Voraussetzung ist das Bild dieser Anwendung linear von $x_i$ abhängig, also  \[ f( \boldsymbol x_i) = a_i x_i \quad \textnormal{mit}\; a_i \in \mathbb R\,. \] Dieses Verhalten gilt in jedem Argument, also $i=1,\dots,n$ \[ f: \mathbb R^n \to \mathbb R, \boldsymbol x \mapsto f(\boldsymbol x) = a_1 x_1 +  a_2 x_2 + \dots + a_nx_n =  \sum\limits_{i=1}^{n}a_i x_i = \langle \boldsymbol a, \boldsymbol x\rangle \quad \textnormal{mit}\; \boldsymbol a\in \mathbb R^n\,.\]
+\end{exercisebox}
+
+\begin{exercisebox}[Tangenten]
+	Gegeben ist die Funktion $f: \mathbb R \to \mathbb R, \; x\mapsto \frac14 x^2$. Ihr Graph sei $K$. 
+  \begin{enumerate}
+    \item Zeigen Sie, dass die Tangenten an $K$ in den Punkten $B_1\left(-3|\frac94\right)$ und  $B_2\left(\frac43|\frac49\right)$ orthogonal zueinander sind. Zeichnen Sie $K$ zusammen mit diesen Tangenten. 
+    \item Es seien $S_1\left(a|f(a)\right)$ und  $S_2\left(b|f(b)\right)$ Punkte auf $K$. Welche Beziehung besteht zwischen $a$ und $b$, wenn die Tangenten an $K$ in $S_1$ und $S_2$ orthogonal sind?
+    \item Bestimmen Sie die Punkte  $S_1\left(a|f(a)\right)$ und  $S_2\left(b|f(b)\right)$ so, dass die Tangenten in $S_1$ und $S_2$ orthogonal zueinander sind und die Strecke $S_1S_2$ parallel zur $x$-Achse ist. 
+  \end{enumerate}
+
+	\vspace{0.3cm}
+	\noindent{\bf Lösung:}\newline
+	\begin{enumerate}
+		\item Es gilt  $f'(x) = \frac12 x$. Also besitzen die  Tangenten in den Punkten $B_1$ und $B_2$ die Gleichungen 
+			\begin{eqnarray*} 
+				t_1(x) &=& f'(-3)(x + 3) + \frac94 =-\frac32 (x+3) + \frac94\,, \\
+				t_2(x) &=& f'(\frac43)(x + \frac43) + \frac49 =\frac23 (x+ \frac43) + \frac49\,.
+			\end{eqnarray*}
+			Mit Hilfe zweier beliebiger Punkte auf den Gerade kann man die Richtungsvektoren ausrechnen  \begin{eqnarray*} 
+				\boldsymbol r_1 &=& \left(\begin{array}{c} -3 \\ \frac94\end{array} \right) - \left(\begin{array}{c}0\\ -\frac94\end{array}\right) = \left( \begin{array}{c} -3 \\ \frac{9}{2} \end{array}\right)\,,\\
+				\boldsymbol r_2 &=& \left(\begin{array}{c} \frac43 \\ \frac49\end{array} \right) - \left(\begin{array}{c}0\\ -\frac49\end{array}\right) = \left( \begin{array}{c} \frac43 \\ \frac89 \end{array}\right)\,.
+			\end{eqnarray*}
+			Die Tangenten stehen senkrecht aufeinander, da das Skalarprodukts zwischen $\boldsymbol r_1 $ und $\boldsymbol r_2$ verschwindet:
+			\[ \boldsymbol r_1 \boldsymbol \cdot \boldsymbol r_2 = \left(\begin{array}{c} \frac43 \\ \frac89\end{array} \right)\boldsymbol \cdot \left(\begin{array}{c} -3 \\ \frac92\end{array} \right) = \frac43\cdot (-3) + \frac89 \cdot \frac92 = -4 + 4 = 0\,.\]
+			Bemerkung: alternativ kann man das Produkt der Steigungen überprüfen. Es gilt $f'(-3)\cdot f'(\frac43)=-1$, d.h. die Tangenten in $B_1$ und $B_2$ sind orthogonal. 
+		\item Wegen $f'(a) = \frac12 a $ und $f'(b) = \frac12 b$ folgt aus $f'(a) \cdot f'(b) = -1 $ die gesuchte BEziehung $a\cdot b = -4$.
+		\item $\overline{S_1S_2} $ ist parallel zur $x$-Achse, wenn $f(a) = f(b)$ gilt, also $\frac14 a^2 = \frac14 b^2$ und damit $a^2=b^2$ Mit $a\cdot b = -4$ aus dem zweiten Aufgabenteil erhält man $S_1(2|1)$ und $S_2(-2|1)$.
+	\end{enumerate}
+\end{exercisebox}
+
+\begin{exercisebox}[Tangenten]
+  \begin{enumerate}
+	  \item Gegeben ist die Funktion \[ f: \mathbb R \to \mathbb R, x \mapsto \frac14 x^2 + cx\,.\] 
+		  Der Graph von $f$ schneidet die $x$-Achse im Ursprung $O(0|0)$ und im Punkt $A(a|0)$. Die Tangenten an den Graphen in $O$ und $A$ schneiden sich im Punkt $B$. Zeigen Sie, dass das Dreieck $OAB$ stets gleichschenklig ist. Bestimmen Sie den Koeffizienten $c$ so, dass das Dreieck $OAB$ auch rechtwinklig ist.
+	  \item Gegeben ist die Funktion \[ g: \mathbb R \to \mathbb R, \; x \mapsto 2 \sin(cx), \quad c \in (0,\infty)\,. \] Der Graph von $g$ schneidet die $x$-Achse im Ursprung $O=(0|0)$ und im Punkt $A(\frac{\pi}{c}|0)$. Die Tangenten an den Graphen in $O$ und $A$ schneiden sich im Punkt $B$. Bestimmen Sie den Koeffizienten $c$ so, dass das Dreieck $OAB$ gleichseitig ist. 
+  \end{enumerate}
+
+	\vspace{0.3cm}
+	\noindent{\bf Lösung:}\newline
+	\begin{enumerate}
+		\item Es ist $a=-4c$ und $f'(x) = \frac12+c$. Die Tangentengleichungen in den Punkten $O$ und $A$ und der Schnittpunkt $B$ lauten 
+			\begin{eqnarray*}
+				t_1(x) &=& f'(0)x = cx \\ t_2(x) &=& f'(a) (x-a) = (\frac12 \cdot (-4c) + c) (x-a) = -c (x-a)\\
+				t_1(x) &=& t_2(x) \Leftrightarrow x = \frac12 ca  \Rightarrow B(\frac12 a| \frac12 c a)
+			\end{eqnarray*}
+			Die $x$-Koordinate von $B$ teilt gerade die Strecke $OA$. Damit ist das Dreieck gleichschenklig. Damit as Dreieck rechtwinklig ist, muss $c$ so eingerichtet werden, dass die Tangenten im Punkt $B$ senkrecht aufeinander stehen. Die Richtungsvektoren lauten:
+			\begin{eqnarray*}
+				\boldsymbol r_2 =\left( \begin{array}{c} a - \frac12 a \\ -\frac12 ca \end{array}\right)  \quad \textnormal{und} \quad 
+				\boldsymbol r_1 =\left( \begin{array}{c} \frac12 a \\ \frac12 ca \end{array}\right) 
+			\end{eqnarray*}
+			Also gilt   $\boldsymbol r_1 \boldsymbol \cdot \boldsymbol r_2 = 0$ genau dann, wenn $\frac14 a^2 - \frac14 c^2 a^2 = 0 \Leftrightarrow c= 1\,.$ 
+		\item Es ist $f'(x) = 2c\cdot \cos(cx)$. 
+		Die Tangentengleichungen in den Punkten $O$ und $A$ und der Schnittpunkt $B$ lauten 
+			\begin{eqnarray*}
+				t_1(x) &=& f'(0)x = 2c x \\ t_2(x) &=& f'(\frac{\pi}{2}) (x-\frac{\pi}{2}) = -2c (x-\frac{\pi}{c})\\
+				t_1(x) &=& t_2(x) \Leftrightarrow cx = -2c(x-\frac{\pi}{c})  \Rightarrow B(\frac{\pi}{2c}| \pi)
+			\end{eqnarray*}
+			Die $x$-Koordinate von $B$ teilt gerade die Strecke $OA$. Damit ist das Dreieck gleichschenklig. Das Dreieck ist gleichseitig, wenn alle Winkel im Dreieck $\frac23\pi \widehat = 60^\circ$ betragen, d.h. \[ \tan(\frac23\pi) = \sqrt{3} \stackrel{!}{=} \frac{\pi}{\frac{\pi}{2c}} \Rightarrow c = \frac12\sqrt{3}\]
+	\end{enumerate}
+\end{exercisebox}
